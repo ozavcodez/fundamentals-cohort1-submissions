@@ -19,7 +19,7 @@ A comprehensive Node.js (Express + TypeScript) backend API with robust testing s
 - [Testing Strategy](#-testing-strategy)
 - [API Endpoints](#-api-endpoints)
 - [Environment Variables](#-environment-variables)
-- [Deployment](#-deployment)
+- [Deployment]()
 - [Contributing](#-contributing)
 
 ---
@@ -373,48 +373,14 @@ All tests run automatically on every push and pull request via **GitHub Actions*
 
 ### Confidence Through Testing
 
-Our multi-layered testing approach ensures:
+The multi-layered testing approach ensures:
 
-✅ **Individual functions work correctly** (Unit tests)
+**Individual functions work correctly** (Unit tests)
 ✅ **Components integrate properly** (Integration tests)
 ✅ **Complete features function as expected** (E2E tests)
-✅ **Code changes don't break existing functionality** (Regression testing)
 ✅ **Production deployments are safe** (CI/CD validation)
 
-**Result:** Every deploy to production is backed by 150+ automated tests, giving the team confidence that new features don't break existing functionality.
-
 ---
-
-## 📡 API Endpoints
-
-### Base URL
-
-- **Local:** `http://localhost:5000/api`
-- **Production:** `https://codepilot-backend.onrender.com/api`
-
-### Authentication Endpoints
-
-| Method | Endpoint         | Description       | Auth Required |
-| ------ | ---------------- | ----------------- | ------------- |
-| POST   | `/auth/register` | Register new user | No            |
-| POST   | `/auth/login`    | Login user        | No            |
-
-### User Endpoints
-
-| Method | Endpoint     | Description    | Auth Required |
-| ------ | ------------ | -------------- | ------------- |
-| GET    | `/users/:id` | Get user by ID | Yes           |
-| PUT    | `/users/:id` | Update user    | Yes           |
-
-### Product Endpoints
-
-| Method | Endpoint        | Description        | Auth Required |
-| ------ | --------------- | ------------------ | ------------- |
-| GET    | `/products`     | Get all products   | No            |
-| GET    | `/products/:id` | Get product by ID  | No            |
-| POST   | `/products`     | Create new product | Yes           |
-| PUT    | `/products/:id` | Update product     | Yes           |
-| DELETE | `/products/:id` | Delete product     | Yes           |
 
 ### Complete Documentation
 
@@ -422,19 +388,7 @@ For detailed request/response examples, see the [Postman Collection](https://doc
 
 ---
 
-## 🔐 Environment Variables
-
-| Variable         | Description               | Example                      |
-| ---------------- | ------------------------- | ---------------------------- |
-| `PORT`           | Server port               | `5000`                       |
-| `NODE_ENV`       | Environment               | `development` / `production` |
-| `MONGO_URI`      | MongoDB connection string | `mongodb+srv://...`          |
-| `JWT_SECRET`     | Secret key for JWT        | `your_secret_key_here`       |
-| `JWT_EXPIRES_IN` | JWT expiration time       | `7d`                         |
-
----
-
-## 🌐 Deployment
+## Deployment
 
 ### Deployed on Render
 
@@ -447,11 +401,6 @@ For detailed request/response examples, see the [Postman Collection](https://doc
 3. If tests pass, Render builds and deploys
 4. Zero-downtime deployment
 
-**Monitoring:**
-
-- View logs: [Render Dashboard](https://dashboard.render.com)
-- Health check: `GET /api/health`
-
 ### Database
 
 **Hosted on MongoDB Atlas:**
@@ -462,47 +411,6 @@ For detailed request/response examples, see the [Postman Collection](https://doc
 
 ---
 
-## 📊 Test Coverage Report
-
-Run tests with coverage:
-
-```bash
-npm test -- --coverage
-```
-
-**Current Coverage:**
-
-```
----------------------------|---------|----------|---------|---------|
-File                       | % Stmts | % Branch | % Funcs | % Lines |
----------------------------|---------|----------|---------|---------|
-All files                  |   85.5  |   78.3   |   90.1  |   85.2  |
- modules/auth              |   88.2  |   82.1   |   92.3  |   87.9  |
-  controller.ts            |   85.7  |   78.9   |   90.0  |   85.4  |
-  service.ts               |   90.5  |   85.2   |   94.4  |   90.2  |
- modules/users             |   84.1  |   76.8   |   88.9  |   83.8  |
-  controller.ts            |   82.3  |   74.5   |   87.5  |   82.0  |
-  service.ts               |   86.7  |   79.2   |   90.9  |   86.1  |
- modules/products          |   83.9  |   75.4   |   89.2  |   83.5  |
-  controller.ts            |   81.5  |   73.1   |   87.5  |   81.2  |
-  service.ts               |   86.8  |   78.3   |   91.7  |   86.3  |
- utils                     |   92.1  |   87.5   |   95.0  |   91.8  |
-  token.ts                 |   92.1  |   87.5   |   95.0  |   91.8  |
----------------------------|---------|----------|---------|---------|
-```
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
 **Ensure all tests pass before submitting:**
 
 ```bash
@@ -511,37 +419,11 @@ npm test
 
 ---
 
-## 📝 License
+## Author
 
-This project is part of the **Brave Cohort 1 - Week 7 Challenge**.
-
----
-
-## 👨‍💻 Author
-
-**Mary Okafor**
+**Mary Amadi**
 
 - GitHub: [@maryokafor28](https://github.com/maryokafor28)
-- Email: maryokafor28@example.com
+- Email: vincyokafor@gmail,com
 
 ---
-
-## 🙏 Acknowledgments
-
-- Brave Cohort 1 Community
-- Challenge instructors and mentors
-- Open source libraries and tools used in this project
-
----
-
-## 📚 Additional Resources
-
-- [Express.js Documentation](https://expressjs.com/)
-- [Jest Testing Framework](https://jestjs.io/)
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
-- [JWT Best Practices](https://jwt.io/introduction)
-
----
-
-**⭐ If you find this project helpful, please consider giving it a star!**
