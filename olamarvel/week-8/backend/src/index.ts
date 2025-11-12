@@ -51,6 +51,10 @@ app.use("/health-check", (req, res) => {
     timestamp: new Date().toISOString(),
   });
 })
+app.get('/metrics', async (req, res) => {
+  res.set('Content-Type', 'text/plain');
+  res.send(await (await import('./util/metrics')).register.metrics());
+});
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
