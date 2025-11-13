@@ -4,3 +4,5 @@ dist
 .env
 */dev.nix
 .idx/dev.nix
+*.log
+*.log.gz
