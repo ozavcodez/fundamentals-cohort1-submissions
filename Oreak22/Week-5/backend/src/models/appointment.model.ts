@@ -54,7 +54,7 @@ const AppointmentSchema = new Schema<IAppointment>(
 );
 
 //
-// Middleware: Add appointment ref to Doctor & Patient after save
+// 🔁 Middleware: Add appointment ref to Doctor & Patient after save
 //
 AppointmentSchema.post("save", async function (doc) {
   try {
