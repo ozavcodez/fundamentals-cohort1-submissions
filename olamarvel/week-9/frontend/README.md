@@ -73,6 +73,4 @@ VITE_API_URL=http://localhost:3000
 
 # 6. Deployment
 
-**Frontend URL:** *your deployed URL here*
-
 Deploy to Vercel, Netlify, or GitHub Pages.
