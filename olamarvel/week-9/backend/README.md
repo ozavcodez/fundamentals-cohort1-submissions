@@ -165,9 +165,6 @@ Contains:
 
 # 10. Deployment
 
-Hosted on:
-**Backend URL:** *your deployed URL here*
-
 Deployment steps (Render/Railway):
 
 1. Connect repo
